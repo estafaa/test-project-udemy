@@ -47,6 +47,7 @@ group :development do
   gem 'spring'
 end
 
+#wrote that to publish on HEROKU
 group :production do
   gem 'pg'
   gem 'rails_12factor'
