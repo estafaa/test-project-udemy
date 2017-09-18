@@ -1,2 +1,64 @@
-@import "bootstrap-sprockets";
+$navbar-expand-lg: #076b8a;
+
+
+//@import "bootstrap-sprockets";
+// Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+
+#logo {
+    float: left;
+    font-size: 1.7em;
+    color: #08088A;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.center {
+    text-align: center;
+}
+
+.jumbotron{
+    background-image: asset-url('forest.jpg');
+    background-size: cover;
+    height: 600px;
+}
+
+.jumbotron h1 {
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.btn-xlarge {
+    font-size: 1.7em;
+    background-color: black;
+    
+}
+
+footer {
+margin-top: 45px;
+padding-top: 5px;
+border-top: 1.5px solid #eaeaea;
+color: #777;
+}
+
+footer small {
+    float: left;
+}
+
+footer ul{
+    float: right;
+    list-style: none;
+}
+
+footer ul li {
+    float: left;
+    margin-left: 15px;
+}
+
+table, th, td {
+   border: 1px solid grey;
+}
+

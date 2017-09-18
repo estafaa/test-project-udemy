@@ -5,18 +5,18 @@
 <table>
     <tr>
         <th>#</th>
-        <th>Title</th>
-        <th>Description</th>
+        <th style="width: 150px">Title</th>
+        <th style="width: 350px">Description</th>
         <th>Created</th>
         <th>Updated</th>
-        <th></th>
+       
     </tr>
     
     
     <% @articles.each do |article| %>
     <tr>
         <td> <%= article.id %> </td>
-        <td> <%= article.title %> </td>
+        <td > <%= article.title %> </td>
         <td> <%= article.description %> </td>
         <td> <%= article.created_at %> </td>
         <td> <%= article.updated_at %> </td>
