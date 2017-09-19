@@ -30,7 +30,7 @@ class ArticlesController < ApplicationController
     
     def update
         if @article.update(article_params)
-            flash[:success] = "Artcile waw updated"
+            flash[:success] = "Artcile was updated"
             redirect_to article_path(@article)
         else
             render 'edit'
@@ -46,7 +46,7 @@ class ArticlesController < ApplicationController
     
     def destroy
     @article.destroy
-    flash[:danger] = "Articles was deleted"
+    flash[:danger] = "Articles ##{@article.id} with Title: ''#{@article.title}'' was deleted"
     redirect_to articles_path
     end
 
