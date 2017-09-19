@@ -8,7 +8,7 @@ $navbar-expand-lg: #076b8a;
 #logo {
     float: left;
     font-size: 1.7em;
-    color: #08088A;
+    color: #262525;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -27,7 +27,7 @@ $navbar-expand-lg: #076b8a;
 .jumbotron h1 {
     color: #ffffff;
     letter-spacing: 1px;
-    font-size: 5em;
+    font-size: 3.2em;
     font-weight: bold;
 }
 
@@ -62,3 +62,11 @@ table, th, td {
    border: 1px solid grey;
 }
 
+
+.greenish {
+    color: green;
+}
+
+.redish {
+    color: red;
+}
