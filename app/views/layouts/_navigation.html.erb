@@ -42,7 +42,7 @@
      <% if logged_in? %>
        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Your profile
+          Your profile <%= "Admin" if current_user.admin? %>
           </a>
           
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
