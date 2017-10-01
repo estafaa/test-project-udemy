@@ -26,6 +26,10 @@
         <% end %>
        <h4 align="center"><strong>Description:</strong></h4> <hr>
        <%= simple_format(@article.description) %>
+       <% if @article.categories.any? %>
+          <hr>
+          <p> Categories: <%= render @article.categories %> </p>
+       <% end %>
        <div class="articles-actions" style="margin-bottom: 10px">
            <% if logged_in? && (current_user == @article.user || current_user.admin?) %>
               <%= link_to "Edit", edit_article_path, class: "btn btn-sm btn-primary" %>

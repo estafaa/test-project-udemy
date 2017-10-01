@@ -103,3 +103,22 @@ table, th, td {
     align-items: center;
     justify-content: center;
 }
+
+
+.checkbox {
+     margin-left: 10px;
+     margin-right: 2px;
+}
+
+.checkbox_text{
+     text-transform: capitalize;
+}
+
+.input_checkbox input {
+    width: auto !important;
+}
+
+.badge {
+    
+    text-transform: uppercase;
+}
