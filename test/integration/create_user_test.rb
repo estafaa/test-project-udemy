@@ -19,7 +19,7 @@ class CreateUserTest < ActionDispatch::IntegrationTest
     end
     
     
-     test "new user name too short" do
+    test "new user name too short" do
         get signup_path
         assert_template 'users/new'
         assert_no_difference 'User.count' do
@@ -28,7 +28,7 @@ class CreateUserTest < ActionDispatch::IntegrationTest
         assert_template 'users/new'
     end
   
-   test "create new article" do
+    test "create new article" do
         @user = User.create(username: "Anton", email: "aaa@aaa.aa", password: "password", admin: true )
         sign_in_as(@user, "password")
         get new_article_path
